@@ -97,7 +97,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="core\AppMan.vb" />
     <Compile Include="core\Bazak.vb" />
+    <Compile Include="core\cSaat.vb" />
+    <Compile Include="core\cTarikh.vb" />
+    <Compile Include="core\SQLiter.vb" />
     <Compile Include="core\xMods.vb" />
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
