@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bg01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SEGOEUI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGOEUI.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGOEUIB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGOEUIB.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGOEUII" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGOEUII.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGOEUIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGOEUIL.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGOEUISL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGOEUISL.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGOEUIZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGOEUIZ.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGUIBL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGUIBL.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGUIBLI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGUIBLI.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGUIEMJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGUIEMJ.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGUILI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGUILI.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGUISB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGUISB.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGUISBI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGUISBI.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SEGUISLI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEGUISLI.TTF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
 </root>

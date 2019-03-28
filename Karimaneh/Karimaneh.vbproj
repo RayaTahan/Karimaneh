@@ -72,11 +72,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="core\Bazak.vb" />
+    <Compile Include="core\xMods.vb" />
+    <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,6 +98,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -114,6 +119,22 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\SEGOEUI.TTF" />
+    <None Include="Resources\SEGOEUIB.TTF" />
+    <None Include="Resources\SEGOEUII.TTF" />
+    <None Include="Resources\SEGOEUIL.TTF" />
+    <None Include="Resources\SEGOEUISL.TTF" />
+    <None Include="Resources\SEGOEUIZ.TTF" />
+    <None Include="Resources\SEGUIBL.TTF" />
+    <None Include="Resources\SEGUIBLI.TTF" />
+    <None Include="Resources\SEGUIEMJ.TTF" />
+    <None Include="Resources\SEGUILI.TTF" />
+    <None Include="Resources\SEGUISB.TTF" />
+    <None Include="Resources\SEGUISBI.TTF" />
+    <None Include="Resources\SEGUISLI.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg01.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
