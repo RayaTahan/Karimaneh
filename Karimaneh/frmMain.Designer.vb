@@ -22,7 +22,7 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.Menu1 = New System.Windows.Forms.MenuStrip()
         Me.نرمافزارToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.پایگاهدادهToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.تهیهنسخهپشتیبانToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -31,18 +31,18 @@ Partial Class frmMain
         Me.مدیریتکاربرانToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.مدیریتنقشهاToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Menu.SuspendLayout()
+        Me.Menu1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Menu
+        'Menu1
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.نرمافزارToolStripMenuItem})
-        Me.Menu.Location = New System.Drawing.Point(0, 0)
-        Me.Menu.Name = "Menu"
-        Me.Menu.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Menu.Size = New System.Drawing.Size(596, 24)
-        Me.Menu.TabIndex = 0
-        Me.Menu.Text = "MenuStrip1"
+        Me.Menu1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.نرمافزارToolStripMenuItem})
+        Me.Menu1.Location = New System.Drawing.Point(0, 0)
+        Me.Menu1.Name = "Menu1"
+        Me.Menu1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Menu1.Size = New System.Drawing.Size(596, 24)
+        Me.Menu1.TabIndex = 0
+        Me.Menu1.Text = "MenuStrip1"
         '
         'نرمافزارToolStripMenuItem
         '
@@ -61,13 +61,13 @@ Partial Class frmMain
         'تهیهنسخهپشتیبانToolStripMenuItem
         '
         Me.تهیهنسخهپشتیبانToolStripMenuItem.Name = "تهیهنسخهپشتیبانToolStripMenuItem"
-        Me.تهیهنسخهپشتیبانToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.تهیهنسخهپشتیبانToolStripMenuItem.Size = New System.Drawing.Size(282, 22)
         Me.تهیهنسخهپشتیبانToolStripMenuItem.Text = "تهیه نسخه پشتیبان"
         '
         'بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem
         '
         Me.بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem.Name = "بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem"
-        Me.بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem.Size = New System.Drawing.Size(282, 22)
         Me.بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem.Text = "بروزرسانی توسط نسخه پشتیبان"
         '
         'امنیتToolStripMenuItem
@@ -100,19 +100,19 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(596, 415)
-        Me.Controls.Add(Me.Menu)
-        Me.MainMenuStrip = Me.Menu
+        Me.Controls.Add(Me.Menu1)
+        Me.MainMenuStrip = Me.Menu1
         Me.Name = "frmMain"
         Me.Text = "کریمانه"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
+        Me.Menu1.ResumeLayout(False)
+        Me.Menu1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Menu As MenuStrip
+    Friend WithEvents Menu1 As MenuStrip
     Friend WithEvents نرمافزارToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents پایگاهدادهToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents تهیهنسخهپشتیبانToolStripMenuItem As ToolStripMenuItem
