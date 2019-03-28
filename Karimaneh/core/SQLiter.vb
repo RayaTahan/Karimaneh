@@ -19,6 +19,8 @@ Public NotInheritable Class SQLiter
         If con.State <> ConnectionState.Open Then con.Open()
         Cmd.CommandText = CommandText
         tmp = Cmd.ExecuteNonQuery()
+
+        If con.Changes > 0 Then SabteZamaneTaqir()
         con.Close()
         Return tmp
     End Function
@@ -32,6 +34,11 @@ Public NotInheritable Class SQLiter
         Cmd.Parameters.AddRange(Parametrs)
 
         tmp = Cmd.ExecuteNonQuery()
+
+        If Parametrs.Count = 2 And Parametrs(0).Value = "ZamaneAkharinTaqir" Then
+        Else
+            If con.Changes > 0 Then SabteZamaneTaqir()
+        End If
         con.Close()
         Return tmp
     End Function
@@ -48,6 +55,8 @@ Public NotInheritable Class SQLiter
             tmp = ""
         End Try
 
+
+        If con.Changes > 0 Then SabteZamaneTaqir()
         con.Close()
         Return tmp
     End Function
@@ -71,6 +80,8 @@ Public NotInheritable Class SQLiter
             tmp = ""
         End Try
 
+
+        If con.Changes > 0 Then SabteZamaneTaqir()
         con.Close()
         Return tmp
     End Function
@@ -79,6 +90,8 @@ Public NotInheritable Class SQLiter
         Dim tmp As New DataTable
         DA.SelectCommand.CommandText = CommandText
         DA.Fill(tmp)
+
+        If HasIUD(CommandText) Then SabteZamaneTaqir()
         Return tmp
     End Function
 
@@ -89,6 +102,8 @@ Public NotInheritable Class SQLiter
         DA.SelectCommand.Parameters.Clear()
         DA.SelectCommand.Parameters.AddRange(Parametrs)
         DA.Fill(tmp)
+
+        If HasIUD(CommandText) Then SabteZamaneTaqir()
         Return tmp
     End Function
 
@@ -98,6 +113,8 @@ Public NotInheritable Class SQLiter
             DataSet.Tables.Remove(TableName)
         End If
         DA.Fill(DataSet, TableName)
+
+        If HasIUD(CommandText) Then SabteZamaneTaqir()
     End Sub
 
     Public Shared Sub Fill(ByRef DataSet As DataSet, ByVal TableName As String, ByVal CommandText As String, ByVal Parametrs() As SQLiteParameter)
@@ -109,27 +126,22 @@ Public NotInheritable Class SQLiter
             DataSet.Tables.Remove(TableName)
         End If
         DA.Fill(DataSet, TableName)
+
+        If HasIUD(CommandText) Then SabteZamaneTaqir()
     End Sub
 
-    Public Shared Function useStoredProcedure(ByVal Name As String, ByVal Parametrs() As SQLiteParameter, Optional ByVal Out As String = "") As String
-        Dim ret As String
-        Cmd.CommandText = Name
-        Cmd.CommandType = CommandType.StoredProcedure
-        Cmd.Parameters.AddRange(Parametrs)
-        If con.State <> ConnectionState.Open Then con.Open()
-        Cmd.ExecuteNonQuery()
-        con.Close()
-        If Out = "" Then
-            ret = ""
-        Else
-            Try
-                ret = Cmd.Parameters(Out).Value.ToString
-            Catch ex As Exception
-                ret = ""
-            End Try
-        End If
+    Private Shared Sub SabteZamaneTaqir()
+        AppMan.Tanzimat("ZamaneAkharinTaqir") = $"{AppMan.AlanTarikh}-{AppMan.AlanSaat}"
+    End Sub
 
-        Return ret
+    Private Shared Function HasIUD(Command As String) As Boolean
+        Command = Command.ToLower
+        Dim iud = {"insert ", "update ", "delete "}
+        For Each s In iud
+            If Command.Contains(s) Then
+                Return True
+            End If
+        Next
+        Return False
     End Function
-
 End Class
