@@ -105,6 +105,7 @@
     <Compile Include="core\Bazak.vb" />
     <Compile Include="core\cSaat.vb" />
     <Compile Include="core\cTarikh.vb" />
+    <Compile Include="core\Enums.vb" />
     <Compile Include="core\MSGbox.vb" />
     <Compile Include="core\SQLiter.vb" />
     <Compile Include="core\xMods.vb" />
