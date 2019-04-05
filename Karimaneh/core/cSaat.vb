@@ -86,4 +86,9 @@ Public Class cSaat
         Return tmp
     End Function
 
+    Public Function Adadi() As Integer
+        Dim tmp As String = Strings.Right("00" & Saat.ToString, 2) & Strings.Right("00" & Daqiqe.ToString, 2) & Strings.Right("00" & Sanie.ToString, 2)
+        Return Val(tmp)
+    End Function
+
 End Class

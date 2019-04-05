@@ -100,6 +100,13 @@ Public Class cTarikh
         Return tmp
     End Function
 
+    Public Function Adadi() As Integer
+        Dim tmp As String = Strings.Right("0000" & Sal.ToString, 4)
+        tmp += Strings.Right("00" & Mah.ToString, 2)
+        tmp += Strings.Right("00" & Ruz.ToString, 2)
+        Return Val(tmp)
+    End Function
+
     Public Function Tabdil(ByVal Shamsi As String, ByVal no As No) As String
         Dim ret As String = ""
         Try
