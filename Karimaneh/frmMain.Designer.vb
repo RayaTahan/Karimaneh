@@ -27,16 +27,29 @@ Partial Class frmMain
         Me.پایگاهدادهToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.تهیهنسخهپشتیبانToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.امنیتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.مدیریتکاربرانToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.مدیریتنقشهاToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.اطلاعاتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.اطلاعاتفردیToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.اطلاعاتخانوارToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.سازمانهایهمراستاToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.شرکتهایبیمهToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.خیرینToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.خدماتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.اماکنToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.نمایشنقشهکلیToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Menu1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Menu1
         '
-        Me.Menu1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.نرمافزارToolStripMenuItem})
+        Me.Menu1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.نرمافزارToolStripMenuItem, Me.اطلاعاتToolStripMenuItem, Me.اماکنToolStripMenuItem})
         Me.Menu1.Location = New System.Drawing.Point(0, 0)
         Me.Menu1.Name = "Menu1"
         Me.Menu1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -46,7 +59,7 @@ Partial Class frmMain
         '
         'نرمافزارToolStripMenuItem
         '
-        Me.نرمافزارToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.پایگاهدادهToolStripMenuItem, Me.امنیتToolStripMenuItem})
+        Me.نرمافزارToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.پایگاهدادهToolStripMenuItem, Me.امنیتToolStripMenuItem, Me.ToolStripMenuItem1})
         Me.نرمافزارToolStripMenuItem.Name = "نرمافزارToolStripMenuItem"
         Me.نرمافزارToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
         Me.نرمافزارToolStripMenuItem.Text = "نرم‌افزار"
@@ -70,6 +83,12 @@ Partial Class frmMain
         Me.بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem.Size = New System.Drawing.Size(282, 22)
         Me.بروزرسانیتوسطنسخهپشتیبانToolStripMenuItem.Text = "بروزرسانی توسط نسخه پشتیبان"
         '
+        'زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem
+        '
+        Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem.Name = "زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem"
+        Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem.Size = New System.Drawing.Size(282, 22)
+        Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem.Text = "زمان آخرین تغییرات در این نسخه پایگاه داده"
+        '
         'امنیتToolStripMenuItem
         '
         Me.امنیتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.مدیریتکاربرانToolStripMenuItem, Me.مدیریتنقشهاToolStripMenuItem})
@@ -89,11 +108,81 @@ Partial Class frmMain
         Me.مدیریتنقشهاToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.مدیریتنقشهاToolStripMenuItem.Text = "مدیریت نقش‌ها"
         '
-        'زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem
+        'ToolStripMenuItem1
         '
-        Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem.Name = "زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem"
-        Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem.Size = New System.Drawing.Size(282, 22)
-        Me.زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem.Text = "زمان آخرین تغییرات در این نسخه پایگاه داده"
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(149, 6)
+        '
+        'اطلاعاتToolStripMenuItem
+        '
+        Me.اطلاعاتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.اطلاعاتفردیToolStripMenuItem, Me.اطلاعاتخانوارToolStripMenuItem, Me.ToolStripMenuItem2, Me.سازمانهایهمراستاToolStripMenuItem, Me.شرکتهایبیمهToolStripMenuItem, Me.ToolStripMenuItem3, Me.خیرینToolStripMenuItem, Me.ToolStripMenuItem4, Me.خدماتToolStripMenuItem})
+        Me.اطلاعاتToolStripMenuItem.Name = "اطلاعاتToolStripMenuItem"
+        Me.اطلاعاتToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.اطلاعاتToolStripMenuItem.Text = "اطلاعات"
+        '
+        'اطلاعاتفردیToolStripMenuItem
+        '
+        Me.اطلاعاتفردیToolStripMenuItem.Name = "اطلاعاتفردیToolStripMenuItem"
+        Me.اطلاعاتفردیToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+        Me.اطلاعاتفردیToolStripMenuItem.Text = "اطلاعات فردی"
+        '
+        'اطلاعاتخانوارToolStripMenuItem
+        '
+        Me.اطلاعاتخانوارToolStripMenuItem.Name = "اطلاعاتخانوارToolStripMenuItem"
+        Me.اطلاعاتخانوارToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+        Me.اطلاعاتخانوارToolStripMenuItem.Text = "اطلاعات خانوار"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(168, 6)
+        '
+        'سازمانهایهمراستاToolStripMenuItem
+        '
+        Me.سازمانهایهمراستاToolStripMenuItem.Name = "سازمانهایهمراستاToolStripMenuItem"
+        Me.سازمانهایهمراستاToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+        Me.سازمانهایهمراستاToolStripMenuItem.Text = "سازمان‌های هم‌راستا"
+        '
+        'شرکتهایبیمهToolStripMenuItem
+        '
+        Me.شرکتهایبیمهToolStripMenuItem.Name = "شرکتهایبیمهToolStripMenuItem"
+        Me.شرکتهایبیمهToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+        Me.شرکتهایبیمهToolStripMenuItem.Text = "شرکت‌های بیمه"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(168, 6)
+        '
+        'خیرینToolStripMenuItem
+        '
+        Me.خیرینToolStripMenuItem.Name = "خیرینToolStripMenuItem"
+        Me.خیرینToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+        Me.خیرینToolStripMenuItem.Text = "خیرین"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(168, 6)
+        '
+        'خدماتToolStripMenuItem
+        '
+        Me.خدماتToolStripMenuItem.Name = "خدماتToolStripMenuItem"
+        Me.خدماتToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+        Me.خدماتToolStripMenuItem.Text = "خدمات"
+        '
+        'اماکنToolStripMenuItem
+        '
+        Me.اماکنToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.نمایشنقشهکلیToolStripMenuItem})
+        Me.اماکنToolStripMenuItem.Name = "اماکنToolStripMenuItem"
+        Me.اماکنToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
+        Me.اماکنToolStripMenuItem.Text = "اماکن"
+        '
+        'نمایشنقشهکلیToolStripMenuItem
+        '
+        Me.نمایشنقشهکلیToolStripMenuItem.Name = "نمایشنقشهکلیToolStripMenuItem"
+        Me.نمایشنقشهکلیToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.نمایشنقشهکلیToolStripMenuItem.Text = "نمایش نقشه کلی"
         '
         'frmMain
         '
@@ -121,4 +210,17 @@ Partial Class frmMain
     Friend WithEvents مدیریتکاربرانToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents مدیریتنقشهاToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents زمانآخرینتغییراتدرایننسخهپایگاهدادهToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
+    Friend WithEvents اطلاعاتToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents اطلاعاتفردیToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents اطلاعاتخانوارToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripSeparator
+    Friend WithEvents سازمانهایهمراستاToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents شرکتهایبیمهToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripSeparator
+    Friend WithEvents خیرینToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripSeparator
+    Friend WithEvents خدماتToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents اماکنToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents نمایشنقشهکلیToolStripMenuItem As ToolStripMenuItem
 End Class

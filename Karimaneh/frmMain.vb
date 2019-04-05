@@ -20,4 +20,8 @@
         End If
         MSGbox.Show(msg)
     End Sub
+
+    Private Sub frmMain_HandleDestroyed(sender As Object, e As EventArgs) Handles Me.HandleDestroyed
+        Application.Exit()
+    End Sub
 End Class
