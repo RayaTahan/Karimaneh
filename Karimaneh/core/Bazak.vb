@@ -6,11 +6,13 @@ Public NotInheritable Class Bazak
     Private Shared _pfc As PrivateFontCollection = Nothing
     Private Shared _bgIMG As Image = Nothing
 
-    Public Shared Sub BazakForm(ByRef Form As Form)
+    Public Shared Sub BazakForm(ByRef Form As Form, Optional BiAx As Boolean = False)
         Dim pic As New PictureBox With {.SizeMode = PictureBoxSizeMode.StretchImage, .BorderStyle = BorderStyle.None, .Dock = DockStyle.Fill, .Image = bgIMG, .Name = "picBazak"}
         With Form
             .Icon = Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location)
-            .Controls.Add(pic)
+            If Not BiAx Then
+                .Controls.Add(pic)
+            End If
             '.Controls.SetChildIndex(bgimg, 0)
             .Font = myFont()
             .StartPosition = FormStartPosition.CenterParent

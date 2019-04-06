@@ -3,8 +3,8 @@ Imports Newtonsoft.Json
 
 Public Module xMods
     <Extension()>
-    Public Sub Bazak(Source As Form)
-        Karimaneh.Bazak.BazakForm(Source)
+    Public Sub Bazak(Source As Form, Optional BiAx As Boolean = False)
+        Karimaneh.Bazak.BazakForm(Source, BiAx)
     End Sub
 
     <Extension()>
