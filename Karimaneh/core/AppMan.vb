@@ -359,6 +359,13 @@ Public Class AppMan
                 Tanzimat("dbVer") = 2
             End If
 
+            If dbVer = 2 Then
+                SQLiter.RunCommand($"insert into tKarbarHa(kUser,kPass,Onvan,A_ModirKol,ZIjad) values('admin','{Karbari.HashPassword("admin")}','مدیر',{Enums.BalehKheyr.Baleh:D},'{AlanZaman()}')")
+
+
+                Tanzimat("dbVer") = 3
+            End If
+
             'If dbVer = 1 Then
             '    Tanzimat("dbVer") = 1000
             'End If
@@ -405,12 +412,24 @@ Public Class AppMan
     End Function
 
 
-    Public Shared Function AlanTarikh() As String
-        Return ((New cTarikh).ToString)
+    Public Shared Function AlanTarikh(Optional Adadi As Boolean = False) As String
+        If Adadi Then
+            Return ((New cTarikh).Adadi)
+        Else
+            Return ((New cTarikh).ToString)
+        End If
     End Function
 
-    Public Shared Function AlanSaat() As String
-        Return ((New cSaat).ToString)
+    Public Shared Function AlanSaat(Optional Adadi As Boolean = False) As String
+        If Adadi Then
+            Return ((New cSaat).Adadi)
+        Else
+            Return ((New cSaat).ToString)
+        End If
+    End Function
+
+    Public Shared Function AlanZaman() As String
+        Return $"{AlanTarikh()}-{AlanSaat()}"
     End Function
 
     Public Shared Function strVer()

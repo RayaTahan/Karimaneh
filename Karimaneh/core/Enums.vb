@@ -1,18 +1,19 @@
 ﻿Public Module Enums
+
 #Region "Omumi"
-    Public Enum BalehKheyr
+    Public Enum BalehKheyr As Integer
         Baleh = 1
         Kheyr = 0
     End Enum
 
-    Public Enum BakhshHa
+    Public Enum BakhshHa As Integer
         Fard = 1
         KhanehVar = 2
         Maskan = 3
         MaskanVahed = 4
     End Enum
 
-    Public Enum Taqirat_No
+    Public Enum Taqirat_No As Integer
         Ezafeh = 1
         Hazf = 2
         Virayesh = 3
@@ -34,14 +35,14 @@
 #End Region
 
 #Region "Afrad"
-    Public Enum Afrad_Jens
+    Public Enum Afrad_Jens As Integer
         NaMalum = -1
         Mozakkar = 1
         Moannas = 2
         DoJenseh = 3
     End Enum
 
-    Public Enum Afrad_Taahol
+    Public Enum Afrad_Taahol As Integer
         NaMalum = -1
         Mojarrad = 1
         Moteahel = 2
@@ -49,13 +50,13 @@
         HamsarMordeh = 4
     End Enum
 
-    Public Enum Afrad_Vaziat
+    Public Enum Afrad_Vaziat As Integer
         Arshiv = -1
         TaeedNashodeh = 0
         TaeedShodeh = 1
     End Enum
 
-    Public Enum DinHa
+    Public Enum DinHa As Integer
         NaMalum = -1
         Eslam = 1
         Masihi = 2
@@ -65,7 +66,7 @@
         FerqeHayeZalleh = 99
     End Enum
 
-    Public Enum Afrad_Tahsilat
+    Public Enum Afrad_Tahsilat As Integer
         NaMalum = -1
         BiSavad = 0
         Ebtedaee = 1
@@ -88,7 +89,7 @@
 #End Region
 
 #Region "KhanehVar"
-    Public Enum KhanehVar_Vaziat
+    Public Enum KhanehVar_Vaziat As Integer
         Arshiv = -1
         TaeedNashodeh = 0
         TaeedShodeh = 1
@@ -96,7 +97,7 @@
 #End Region
 
 #Region "Maharat"
-    Public Enum Maharat_Sath
+    Public Enum Maharat_Sath As Integer
         NaMalum = -1
         Moqaddamati = 1
         Mamuli = 2
@@ -105,7 +106,7 @@
 #End Region
 
 #Region "Makan"
-    Public Enum Makan_Radeh
+    Public Enum Makan_Radeh As Integer
         Ostan = 1
         Shahrestan = 2
         Shahr = 3
