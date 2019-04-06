@@ -25,7 +25,7 @@ Public NotInheritable Class SQLiter
         Return tmp
     End Function
 
-    Public Shared Function RunCommand(ByVal CommandText As String, ByVal Parametrs() As SQLiteParameter) As Integer
+    Public Shared Function RunCommand(ByVal CommandText As String, ParamArray Parametrs() As SQLiteParameter) As Integer
         Dim tmp As Integer
         If con.State <> ConnectionState.Open Then con.Open()
         Cmd = con.CreateCommand
@@ -61,7 +61,7 @@ Public NotInheritable Class SQLiter
         Return tmp
     End Function
 
-    Public Shared Function RunCommandScaler(ByVal CommandText As String, ByVal Parametrs() As SQLiteParameter) As String
+    Public Shared Function RunCommandScaler(ByVal CommandText As String, ParamArray Parametrs() As SQLiteParameter) As String
         Dim tmp As String
         Try
             con.Close()
@@ -95,7 +95,7 @@ Public NotInheritable Class SQLiter
         Return tmp
     End Function
 
-    Public Shared Function Fill(CommandText As String, ByVal Parametrs() As SQLiteParameter) As DataTable
+    Public Shared Function Fill(CommandText As String, ParamArray Parametrs() As SQLiteParameter) As DataTable
         Dim tmp As New DataTable
         DA.SelectCommand = con.CreateCommand
         DA.SelectCommand.CommandText = CommandText
@@ -117,7 +117,7 @@ Public NotInheritable Class SQLiter
         If HasIUD(CommandText) Then SabteZamaneTaqir()
     End Sub
 
-    Public Shared Sub Fill(ByRef DataSet As DataSet, ByVal TableName As String, ByVal CommandText As String, ByVal Parametrs() As SQLiteParameter)
+    Public Shared Sub Fill(ByRef DataSet As DataSet, ByVal TableName As String, ByVal CommandText As String, ParamArray Parametrs() As SQLiteParameter)
         DA.SelectCommand = con.CreateCommand
         DA.SelectCommand.CommandText = CommandText
         DA.SelectCommand.Parameters.Clear()
