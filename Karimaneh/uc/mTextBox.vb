@@ -47,4 +47,12 @@
         txt.SelectAll()
         Me.ActiveControl = txt
     End Sub
+
+    Private Sub mTextBox_GotFocus(sender As Object, e As EventArgs) Handles Me.GotFocus
+        Focus()
+    End Sub
+
+    Private Sub txt_GotFocus(sender As Object, e As EventArgs) Handles txt.GotFocus
+        Focus()
+    End Sub
 End Class
